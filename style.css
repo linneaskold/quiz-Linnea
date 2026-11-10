@@ -1,0 +1,36 @@
+body{
+  font-family: monospace;
+  background-color: white;
+  position:absolute;
+  padding-top: 70px;
+  background-color: #080D14;
+  margin: 0px;
+}
+
+.quiz{
+    padding-left: 100px;
+    padding-top: 30px;
+    position: relative;
+    background-color: #151E2B;
+    color:#B9C2C9;
+    width: 500px;
+    height: 200px;
+    top:40px;
+    left:350px;
+    border-radius: 2%;
+}
+
+input{
+    position: relative;
+    left:0px;
+    cursor:pointer;
+}
+
+button{
+    position: relative;
+    left:200px;
+    bottom:21.55px;
+    color:black;
+    width: 80px;
+    cursor:pointer;
+}
