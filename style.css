@@ -14,7 +14,7 @@ body{
     background-color: #151E2B;
     color:#B9C2C9;
     width: 500px;
-    height: 200px;
+    height: 700px;
     top:40px;
     left:350px;
     border-radius: 2%;
@@ -33,3 +33,19 @@ button{
     width: 80px;
     cursor:pointer;
 }
+
+.question-image {
+    max-width: 80%;
+    align-items: center;
+    position: relative;
+    left: 0px;
+}
+
+.options{
+    position: relative;
+    left:-200px;
+    cursor:pointer;
+ }
+
+.options a:hover {
+    background-color: rgb(255, 0, 0);}
