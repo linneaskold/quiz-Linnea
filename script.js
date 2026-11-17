@@ -27,14 +27,19 @@ const quizData = [
         question: "What is the name of the main virus in re5",
         options: ["T-Veronica virus", "G-virus", "T-virus", "Uroboros"],
         correct: 3
-    },
+    }
 
 ];
+
+//dehär under är variabler
+// let ändrar datan, konst så kan det aldrig ändras
 
 let currentQuestion = 0;
 let score = 0;
 let playerName = "";
 let Leaderboard = [];
+
+//Denhär funktionen ska starta quizet
 
 function startQuiz() {
     playerName = document.getElementById("player-Name").value.trim();
@@ -48,4 +53,28 @@ function startQuiz() {
     }
 }
 
-    
+
+//Dehär ska visa frågorna och alternativ
+function loadQuestion() {
+    const quizElement = document.getElementById("quiz")
+    const questionData = quizData[currentQuestion];
+
+    let questionHTML = `
+        <div class = "question">
+            <h2>Question${currentQuestion + 1 }:</h2>
+            <p>${questionData.question}</p>
+            <div class = "options">
+    `;
+    questionData.options.forEach((option, index) => {
+
+        questionHTML += `
+            <button onclick="checkAnswer(${index})">${option}</button>
+        `;
+    });
+
+    questionHTML += `
+            </div>
+        </div>
+    `;
+    quizElement.innerHTML = questionHTML;
+}
